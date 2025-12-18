@@ -3,7 +3,7 @@ import { Card, Skeleton } from "@heroui/react";
 
 export default function Skelton() {
     return <>
-        <Card className="w-full space-y-5 p-4 mb-5" radius="lg">
+        <Card className="w-7/8 sm:w-3/4 md:w-lg lg:w-3xl mx-auto mt-5 space-y-5 p-4 mb-5" radius="lg">
             <div className="flex items-center gap-3">
                 <div>
                     <Skeleton className="flex rounded-full w-12 h-12" />
@@ -28,7 +28,7 @@ export default function Skelton() {
                 </Skeleton>
             </div>
         </Card>
-        <Card className="w-full space-y-5 p-4 mb-5" radius="lg">
+        <Card className="w-7/8 sm:w-3/4 md:w-lg lg:w-3xl mx-auto mt-5 space-y-5 p-4 mb-5" radius="lg">
             <div className="flex items-center gap-3">
                 <div>
                     <Skeleton className="flex rounded-full w-12 h-12" />

@@ -7,7 +7,13 @@ const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjkzMTgxMTcxMzEx
 export const getAllPostsAPi = async () => {
     const { data } = await axios.get('https://linked-posts.routemisr.com/posts', {
         headers: { token: token },
-        params: { limit: 10, sort: '-createdAt' }
+        params: { limit: 40, sort: '-createdAt' }
+    })
+    return data
+}
+export const getPostAPi = async (id) => {
+    const { data } = await axios.get('https://linked-posts.routemisr.com/posts/'+id, {
+        headers: { token: token }
     })
     return data
 }
