@@ -1,16 +1,14 @@
-import { Button } from '@heroui/react'
 import './App.css'
+import NavbarComponent from './Components/NavbarComponent';
 import FeedPage from './Pages/FeedPage';
-import PostsContextProvider, { PostsContext } from './Context/context';
 
 
 
 function App() {
 
   return <>
-    <PostsContextProvider>
+      <NavbarComponent/>
       <FeedPage />
-    </PostsContextProvider>
   </>
 }
 

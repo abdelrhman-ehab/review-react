@@ -1,12 +1,13 @@
 import React, { useContext } from 'react'
-import { PostsContext } from '../Context/context'
+
+import PostCard from '../Components/PostCard'
 
 export default function FeedPage() {
 
-  let {allPosts}=useContext(PostsContext)
-  console.log(allPosts)
+
   return (
-    <div>FeedPage</div>
+    <>
+      <PostCard/>
+    </>
   )
 }
-
